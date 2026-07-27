@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Selected work by Chaitanya Anand — a curated archive of products, platforms, and systems built with intention.">
+  <meta name="theme-color" content="#0E0F12">
+  <title>Projects — Chaitanya Anand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Mobile Nav Toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true">
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <nav class="nav__inner" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo">Chaitanya Anand</a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link nav__link--active">Projects</a></li>
+        <li><a href="resume.html" class="nav__link">Resume</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Get in Touch</a>
+      <label for="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </label>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="nav__mobile" aria-hidden="true">
+    <nav>
+      <ul class="nav__mobile-links">
+        <li><a href="../index.html" class="nav__mobile-link">Home</a></li>
+        <li><a href="about.html" class="nav__mobile-link">About</a></li>
+        <li><a href="projects.html" class="nav__mobile-link">Projects</a></li>
+        <li><a href="resume.html" class="nav__mobile-link">Resume</a></li>
+        <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero page-hero--projects">
+    <span class="page-hero__watermark" aria-hidden="true" style="font-size: 350px;">CA</span>
+    <div class="page-hero__blueprint" aria-hidden="true">
+      <span class="blueprint-label blueprint-label--api">API</span>
+      <span class="blueprint-label blueprint-label--db">DATABASE</span>
+      <span class="blueprint-label blueprint-label--auth">AUTH</span>
+      <span class="blueprint-label blueprint-label--deploy">DEPLOY</span>
+      <span class="blueprint-label blueprint-label--build">BUILD</span>
+      <span class="blueprint-label blueprint-label--comp">COMPONENT</span>
+      <span class="blueprint-label blueprint-label--svc">SERVICE</span>
+      <span class="blueprint-label blueprint-label--mod">MODULE</span>
+      <span class="blueprint-label blueprint-label--repo">REPOSITORY</span>
+      <span class="blueprint-label blueprint-label--ver">VERSION</span>
+      <span class="blueprint-label blueprint-label--flow">USER FLOW</span>
+      <span class="blueprint-label blueprint-label--lib">COMPONENT LIBRARY</span>
+    </div>
+    <div class="page-hero__guides" aria-hidden="true">
+      <span class="guide guide--h1"></span>
+      <span class="guide guide--h2"></span>
+      <span class="guide guide--v1"></span>
+      <span class="guide guide--v2"></span>
+      <span class="guide-corner guide-corner--tl"></span>
+      <span class="guide-corner guide-corner--br"></span>
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Project Archive</span>
+      <div class="page-hero__divider" aria-hidden="true"></div>
+      <span class="page-hero__meta">Archive No. 06</span>
+      <h1 class="page-hero__title">Selecteds <span class="page-hero__title-accent">Work.</span></h1>
+      <p class="page-hero__subtitle">A curated collection of products, platforms, and systems — each built with
+        intention and documented with care.</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-grid">
+    <div class="container">
+
+      <!-- ============================================ -->
+      <!-- TIER 1: FEATURE — TradeX                    -->
+      <!-- ============================================ -->
+      <div class="projects-tier projects-tier--feature">
+        <article class="project-card project-card--feature">
+          <div class="project-card__visual">
+            <img src="../images/tradex.png" alt="TradeX — Real-time trading platform preview" class="project-card__image project-card__image--tradex">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Fintech</span>
+            <h2 class="project-card__name">TradeX</h2>
+            <div class="project-card__meta">
+              <span class="project-card__meta-item">Full Stack</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item">2026</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item project-card__meta-item--status">Completed</span>
+            </div>
+            <p class="project-card__desc">Real-time trading platform with live market data, interactive candlestick
+              charts, portfolio tracking, and intelligent trade execution engine.</p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-chip">React</span>
+              <span class="project-card__tech-chip">Node.js</span>
+              <span class="project-card__tech-chip">WebSocket</span>
+              <span class="project-card__tech-chip">MongoDB</span>
+              <span class="project-card__tech-chip">Express</span>
+              <span class="project-card__tech-chip">Chart.js</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="project-tradex.html" class="project-card__action">
+                View Case Study <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="#" class="project-card__action project-card__action--muted">
+                GitHub <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="https://tradex-red.vercel.app/" class="project-card__action project-card__action--muted">
+                Live Demo <span class="project-card__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- TIER 2: STANDARD — Orenburg, Townhall       -->
+      <!-- ============================================ -->
+      <div class="projects-tier projects-tier--standard">
+
+        <!-- Orenburg Healthcare -->
+        <article class="project-card project-card--standard">
+          <div class="project-card__visual">
+            <img src="../images/orenburg.png" alt="Orenburg Healthcare — Product packaging and brand identity preview" class="project-card__image project-card__image--orenburg">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Healthcare</span>
+            <h2 class="project-card__name">Orenburg Healthcare</h2>
+            <div class="project-card__meta">
+              <span class="project-card__meta-item">Branding</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item">Product Design</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item project-card__meta-item--status">Completed</span>
+            </div>
+            <p class="project-card__desc">Healthcare product packaging and brand identity system for a medical supplies
+              company, emphasizing clarity, trust, and clinical precision.</p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-chip">Figma</span>
+              <span class="project-card__tech-chip">Illustrator</span>
+              <span class="project-card__tech-chip">Brand System</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://euphonious-faun-cb7532.netlify.app/" class="project-card__action">
+                Live Demo <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="#" class="project-card__action project-card__action--muted">
+                GitHub <span class="project-card__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Townhall -->
+        <article class="project-card project-card--standard">
+          <div class="project-card__visual">
+            <img src="../images/townhall.png" alt="Townhall — Community-driven discussion platform preview" class="project-card__image project-card__image--townhall">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Civic Tech</span>
+            <h2 class="project-card__name">Townhall</h2>
+            <div class="project-card__meta">
+              <span class="project-card__meta-item">Full Stack</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item">2025</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item project-card__meta-item--status">Completed</span>
+            </div>
+            <p class="project-card__desc">Community-driven discussion platform enabling local governance conversations,
+              town hall meetings, and civic engagement at scale.</p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-chip">React</span>
+              <span class="project-card__tech-chip">Flask</span>
+              <span class="project-card__tech-chip">PostgreSQL</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://townhallrestaurant.in/" class="project-card__action">
+                Live Demo <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="#" class="project-card__action project-card__action--muted">
+                GitHub <span class="project-card__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ============================================ -->
+      <!-- TIER 3: COMPACT — Cuddle Buddy, etc.        -->
+      <!-- ============================================ -->
+      <div class="projects-tier projects-tier--compact">
+
+        <!-- Cuddle Buddy -->
+        <article class="project-card project-card--compact">
+          <div class="project-card__visual">
+            <div class="project-card__pattern project-card__pattern--cuddlebuddy" role="img"
+              aria-label="Cuddle Buddy social platform visual">
+              <div class="project-visual__overlay project-visual__overlay--cuddlebuddy">
+                <div class="project-visual__avatar-row">
+                  <div class="project-visual__avatar"></div>
+                  <div class="project-visual__avatar"></div>
+                  <div class="project-visual__avatar"></div>
+                </div>
+                <div class="project-visual__connection-lines"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Social</span>
+            <h2 class="project-card__name">Cuddle Buddy</h2>
+            <div class="project-card__meta">
+              <span class="project-card__meta-item">Frontend</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item">2025</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item project-card__meta-item--status">Completed</span>
+            </div>
+            <p class="project-card__desc">Friendly social interface designed to foster meaningful connections and
+              community engagement through intuitive interaction patterns.</p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-chip">React</span>
+              <span class="project-card__tech-chip">Tailwind CSS</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="project-card__action">
+                View Case Study <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="#" class="project-card__action project-card__action--muted">
+                GitHub <span class="project-card__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Student Procrastination System -->
+        <article class="project-card project-card--compact">
+          <div class="project-card__visual">
+            <img src="../images/procrastination.png" alt="Student Procrastination System — Analytics dashboard preview" class="project-card__image project-card__image--procrastination">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">EdTech</span>
+            <h2 class="project-card__name">Student Procrastination System</h2>
+            <div class="project-card__meta">
+              <span class="project-card__meta-item">Data Science</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item">2025</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item project-card__meta-item--status">Completed</span>
+            </div>
+            <p class="project-card__desc">Analytics-driven system that tracks study patterns, identifies procrastination
+              triggers, and provides actionable insights for better time management.</p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-chip">Python</span>
+              <span class="project-card__tech-chip">TensorFlow</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="project-card__action">
+                View Case Study <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="#" class="project-card__action project-card__action--muted">
+                GitHub <span class="project-card__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Inclusify (HackMol 6.0) -->
+        <article class="project-card project-card--compact">
+          <div class="project-card__visual">
+            <div class="project-card__pattern project-card__pattern--inclusify" role="img"
+              aria-label="Inclusify accessibility platform visual">
+              <div class="project-visual__overlay project-visual__overlay--inclusify">
+                <div class="project-visual__venn">
+                  <div class="project-visual__venn-circle project-visual__venn-circle--1"></div>
+                  <div class="project-visual__venn-circle project-visual__venn-circle--2"></div>
+                  <div class="project-visual__venn-circle project-visual__venn-circle--3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Hackathon</span>
+            <h2 class="project-card__name">Inclusify</h2>
+            <div class="project-card__meta">
+              <span class="project-card__meta-item">Accessibility</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item">2025</span>
+              <span class="project-card__meta-sep">&mdash;</span>
+              <span class="project-card__meta-item project-card__meta-item--status">HackMol 6.0</span>
+            </div>
+            <p class="project-card__desc">Inclusive design platform built at HackMol 6.0, promoting accessibility
+              awareness and community-driven inclusive design patterns.</p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-chip">React</span>
+              <span class="project-card__tech-chip">Node.js</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="project-card__action">
+                View Case Study <span class="project-card__arrow">&rarr;</span>
+              </a>
+              <a href="#" class="project-card__action project-card__action--muted">
+                GitHub <span class="project-card__arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">&copy; 2026 Chaitanya Anand</p>
+        <div class="footer__social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            class="footer__social-link">LinkedIn</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            class="footer__social-link">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

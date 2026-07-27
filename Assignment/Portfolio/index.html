@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chaitanya Anand — Full Stack Developer building products that solve real problems.">
+  <meta name="theme-color" content="#0C0C0D">
+  <title>Chaitanya Anand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ============================================ -->
+  <!-- CSS-ONLY LOADER                              -->
+  <!-- ============================================ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__bg-grid"></div>
+    <div class="loader__bg-circles"></div>
+    <div class="loader__bg-traces"></div>
+    <div class="loader__content">
+      <span class="loader__initials">CA</span>
+      <span class="loader__line"></span>
+      <span class="loader__sub">Building Software</span>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true">
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <nav class="nav__inner" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">Chaitanya Anand</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="pages/about.html" class="nav__link">About</a></li>
+        <li><a href="pages/projects.html" class="nav__link">Projects</a></li>
+        <li><a href="pages/resume.html" class="nav__link">Resume</a></li>
+        <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="pages/contact.html" class="nav__cta">Say hello &rarr;</a>
+      <label for="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </label>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="nav__mobile" aria-hidden="true">
+    <nav>
+      <ul class="nav__mobile-links">
+        <li><a href="index.html" class="nav__mobile-link">Home</a></li>
+        <li><a href="pages/about.html" class="nav__mobile-link">About</a></li>
+        <li><a href="pages/projects.html" class="nav__mobile-link">Projects</a></li>
+        <li><a href="pages/resume.html" class="nav__mobile-link">Resume</a></li>
+        <li><a href="pages/contact.html" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="home" role="main">
+
+    <!-- ================================ -->
+    <!-- HERO                             -->
+    <!-- ================================ -->
+    <section class="home-hero">
+      <div class="home-hero__bg" aria-hidden="true"></div>
+      <div class="home-hero__grain" aria-hidden="true"></div>
+      <div class="home-hero__watermark" aria-hidden="true">CA</div>
+      <div class="home-hero__glow" aria-hidden="true"></div>
+      <div class="home-hero__container">
+        <div class="home-hero__grid">
+          <div class="home-hero__portrait">
+            <img src="images/chaitanya2.jpeg" alt="Chaitanya Anand" class="home-hero__photo" width="720" height="900">
+          </div>
+          <div class="home-hero__text">
+            <p class="home-hero__label">Project Builder</p>
+            <h1 class="home-hero__name">
+              <span class="home-hero__name-line" style="--i:0">Chaitanya</span>
+              <span class="home-hero__name-line" style="--i:1">Anand</span>
+            </h1>
+            <p class="home-hero__tagline">Building products across finance, healthcare, education, and community.</p>
+            <a href="pages/projects.html" class="home-hero__cta">See the work &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- JOURNEY                          -->
+    <!-- ================================ -->
+    <section class="home-industries" style="background-color: rgb(48, 47, 47);">
+      <div class="home-industries__watermark" aria-hidden="true">CA</div>
+      <div class="home-industries__ambient" aria-hidden="true"></div>
+      <div class="container">
+        <header class="home-industries__header">
+          <span class="home-industries__label">My Journey</span>
+          <h2 class="home-industries__heading">The Journey</h2>
+          <p class="home-industries__intro">Every project I built, every challenge I solved, started with a willingness
+            to learn. Every year shaped the developer I am becoming.</p>
+        </header>
+        <div class="home-industries__flow">
+          <article class="home-industries__card">
+            <span class="home-industries__year">2024</span>
+            <h3 class="home-industries__title">Foundation</h3>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <ul class="home-industries__keywords">
+              <li>Programming</li>
+              <li>Problem Solving</li>
+              <li>Curiosity</li>
+            </ul>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <p class="home-industries__tagline">The year I discovered the joy of building.</p>
+          </article>
+          <div class="home-industries__connector" aria-hidden="true">
+            <span class="home-industries__line"></span>
+            <span class="home-industries__head"></span>
+          </div>
+          <article class="home-industries__card">
+            <span class="home-industries__year">2025</span>
+            <h3 class="home-industries__title">Applications</h3>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <ul class="home-industries__keywords">
+              <li>Frontend</li>
+              <li>Backend</li>
+              <li>Deployment</li>
+            </ul>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <p class="home-industries__tagline">Moving from tutorials to real products.</p>
+          </article>
+          <div class="home-industries__connector" aria-hidden="true">
+            <span class="home-industries__line"></span>
+            <span class="home-industries__head"></span>
+          </div>
+          <article class="home-industries__card">
+            <span class="home-industries__year">2026</span>
+            <h3 class="home-industries__title">Experience</h3>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <ul class="home-industries__keywords">
+              <li>Freelance</li>
+              <li>Hackathons</li>
+              <li>Domains</li>
+            </ul>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <p class="home-industries__tagline">Building across industries, solving real problems.</p>
+          </article>
+          <div class="home-industries__connector" aria-hidden="true">
+            <span class="home-industries__line"></span>
+            <span class="home-industries__head"></span>
+          </div>
+          <article class="home-industries__card">
+            <span class="home-industries__year">Today</span>
+            <h3 class="home-industries__title">Growth</h3>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <ul class="home-industries__keywords">
+              <li>Engineering</li>
+              <li>Architecture</li>
+              <li>Products</li>
+            </ul>
+            <div class="home-industries__divider" aria-hidden="true"></div>
+            <p class="home-industries__tagline">Focused on meaningful digital products.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- ENGINEERING TOOLKIT — EDITORIAL  -->
+    <!-- ================================ -->
+    <section class="home-feature">
+      <div class="home-feature__bg-grid" aria-hidden="true"></div>
+      <div class="home-feature__bg-pcb" aria-hidden="true"></div>
+      <div class="home-feature__bg-annotations" aria-hidden="true"></div>
+      <div class="home-feature__bg-geometry" aria-hidden="true"></div>
+      <div class="container">
+        <header class="home-feature__header">
+          <span class="home-feature__label">Engineering Toolkit</span>
+          <h2 class="home-feature__heading">The Stack I Build With</h2>
+          <p class="home-feature__subtitle">Technologies that help transform ideas into scalable software.</p>
+        </header>
+        <div class="eng-wall">
+
+          <!-- FRONTEND -->
+          <div class="eng-wall__group">
+            <h3 class="eng-wall__category">Frontend</h3>
+            <div class="eng-wall__tiles">
+              <span class="eng-wall__tile eng-wall__tile--w-wide">React</span>
+              <span class="eng-wall__tile eng-wall__tile--s">JavaScript</span>
+              <span class="eng-wall__tile eng-wall__tile--w">HTML5</span>
+              <span class="eng-wall__tile eng-wall__tile--w">CSS3</span>
+              <span class="eng-wall__tile eng-wall__tile--s">Tailwind CSS</span>
+              <span class="eng-wall__tile eng-wall__tile--w">Bootstrap</span>
+              <span class="eng-wall__tile eng-wall__tile--t">Vite</span>
+            </div>
+          </div>
+
+          <!-- BACKEND -->
+          <div class="eng-wall__group">
+            <h3 class="eng-wall__category">Backend</h3>
+            <div class="eng-wall__tiles">
+              <span class="eng-wall__tile eng-wall__tile--s">Node.js</span>
+              <span class="eng-wall__tile eng-wall__tile--w">Flask</span>
+              <span class="eng-wall__tile eng-wall__tile--w-wide">Express</span>
+              <span class="eng-wall__tile eng-wall__tile--s">REST APIs</span>
+              <span class="eng-wall__tile eng-wall__tile--w">JWT</span>
+              <span class="eng-wall__tile eng-wall__tile--t">Authentication</span>
+            </div>
+          </div>
+
+          <!-- DATABASE -->
+          <div class="eng-wall__group">
+            <h3 class="eng-wall__category">Database</h3>
+            <div class="eng-wall__tiles">
+              <span class="eng-wall__tile eng-wall__tile--w-wide">MongoDB</span>
+              <span class="eng-wall__tile eng-wall__tile--s">MySQL</span>
+              <span class="eng-wall__tile eng-wall__tile--w">SQLite</span>
+              <span class="eng-wall__tile eng-wall__tile--w">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- DEV TOOLS -->
+          <div class="eng-wall__tools">
+            <h3 class="eng-wall__category eng-wall__category--tools">Development Tools</h3>
+            <div class="eng-wall__tiles eng-wall__tiles--tools">
+              <span class="eng-wall__tile eng-wall__tile--w">Git</span>
+              <span class="eng-wall__tile eng-wall__tile--s">GitHub</span>
+              <span class="eng-wall__tile eng-wall__tile--w-wide">Docker</span>
+              <span class="eng-wall__tile eng-wall__tile--w">Postman</span>
+              <span class="eng-wall__tile eng-wall__tile--w">VS Code</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- ENGINEERING MINDSET               -->
+    <!-- ================================ -->
+    <section class="home-mindset" style="background-color: rgb(63, 49, 49);">
+
+      <div class="home-mindset__bg-grid" aria-hidden="true"></div>
+      <div class="home-mindset__bg-traces" aria-hidden="true"></div>
+      <div class="home-mindset__bg-marks" aria-hidden="true"></div>
+      <div class="home-mindset__bg-annotations" aria-hidden="true"></div>
+      <div class="home-mindset__ambient" aria-hidden="true"></div>
+
+      <div class="container">
+        <header class="home-mindset__header">
+          <span class="home-mindset__label">Engineering Mindset</span>
+          <h2 class="home-mindset__heading">How I Think While Building Software</h2>
+          <p class="home-mindset__subtitle">The technologies I use may evolve.<br>The way I solve problems continues to
+            define me.</p>
+        </header>
+
+        <div class="home-mindset__wall">
+
+          <div class="mindset__block mindset__block--1">
+            <span class="mindset__line mindset__line--outline">UNDERSTAND</span>
+            <span class="mindset__line mindset__line--filled">BEFORE YOU BUILD</span>
+          </div>
+
+          <div class="mindset__block mindset__block--2">
+            <span class="mindset__line mindset__line--bold">THINK</span>
+            <span class="mindset__line mindset__line--thin">IN PATTERNS</span>
+          </div>
+
+          <div class="mindset__block mindset__block--3">
+            <span class="mindset__line mindset__line--muted">CHOOSE THE</span>
+            <span class="mindset__line mindset__line--filled">RIGHT DATA</span>
+            <span class="mindset__line mindset__line--muted">STRUCTURE</span>
+          </div>
+
+          <div class="mindset__block mindset__block--4">
+            <span class="mindset__line mindset__line--thin">WRITE</span>
+            <span class="mindset__line mindset__line--outline">CLEAN</span>
+            <span class="mindset__line mindset__line--bold">SOLUTIONS</span>
+          </div>
+
+          <div class="mindset__block mindset__block--5">
+            <span class="mindset__line mindset__line--filled">OPTIMIZE</span>
+            <span class="mindset__line mindset__line--thin">WITH PURPOSE</span>
+          </div>
+
+          <div class="mindset__block mindset__block--6">
+            <span class="mindset__line mindset__line--outline">KEEP</span>
+            <span class="mindset__line mindset__line--bold">LEARNING</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================ -->
+    <!-- FUTURE ROADMAP                   -->
+    <!-- ================================ -->
+    <section class="home-roadmap">
+
+      <div class="home-roadmap__bg-grid" aria-hidden="true"></div>
+      <div class="home-roadmap__bg-traces" aria-hidden="true"></div>
+      <div class="home-roadmap__bg-marks" aria-hidden="true"></div>
+      <div class="home-roadmap__bg-annotations" aria-hidden="true"></div>
+      <div class="home-roadmap__ambient" aria-hidden="true"></div>
+
+      <div class="container">
+        <header class="home-roadmap__header">
+          <span class="home-roadmap__label">The Road Ahead</span>
+          <h2 class="home-roadmap__heading">The Engineer I'm Becoming.</h2>
+          <p class="home-roadmap__subtitle">I'm still early in my journey.<br>Every project, every algorithm, every
+            collaboration moves me one step closer to building software that creates real impact.</p>
+        </header>
+
+        <div class="home-roadmap__timeline">
+
+          <div class="roadmap__connector roadmap__connector--top"></div>
+
+          <div class="roadmap__milestone roadmap__milestone--left">
+            <div class="roadmap__node"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__number">01</span>
+              <h3 class="roadmap__title">Mastering the Fundamentals</h3>
+              <p class="roadmap__desc">Building strong problem-solving skills through Data Structures, Algorithms, and
+                System Design.</p>
+            </div>
+          </div>
+
+          <div class="roadmap__connector"></div>
+
+          <div class="roadmap__milestone roadmap__milestone--right">
+            <div class="roadmap__node"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__number">02</span>
+              <h3 class="roadmap__title">Building Real Software</h3>
+              <p class="roadmap__desc">Creating scalable applications with clean architecture and modern engineering
+                practices.</p>
+            </div>
+          </div>
+
+          <div class="roadmap__connector"></div>
+
+          <div class="roadmap__milestone roadmap__milestone--left">
+            <div class="roadmap__node"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__number">03</span>
+              <h3 class="roadmap__title">Working With Great People</h3>
+              <p class="roadmap__desc">Collaborating with startups, founders, engineers, and clients to solve meaningful
+                problems.</p>
+            </div>
+          </div>
+
+          <div class="roadmap__connector"></div>
+
+          <div class="roadmap__milestone roadmap__milestone--right">
+            <div class="roadmap__node"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__number">04</span>
+              <h3 class="roadmap__title">Growing Through Freelancing</h3>
+              <p class="roadmap__desc">Helping businesses turn ideas into polished digital products while continuously
+                learning.</p>
+            </div>
+          </div>
+
+          <div class="roadmap__connector"></div>
+
+          <div class="roadmap__milestone roadmap__milestone--left">
+            <div class="roadmap__node"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__number">05</span>
+              <h3 class="roadmap__title">Building for Impact</h3>
+              <p class="roadmap__desc">The long-term goal isn't writing more code. It's creating products that improve
+                how people work, learn, invest, and live.</p>
+            </div>
+          </div>
+
+          <div class="roadmap__connector roadmap__connector--bottom"></div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">&copy; 2026 Chaitanya Anand</p>
+        <div class="footer__social">
+          <a href="https://github.com/Anandsahab" target="_blank" rel="noopener noreferrer"
+            class="footer__social-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/chaitanya-anand-3097b43b9" target="_blank" rel="noopener noreferrer"
+            class="footer__social-link">LinkedIn</a>
+          <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            class="footer__social-link">Twitter</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CloudBoard — Real-time collaborative whiteboard platform.">
+  <meta name="theme-color" content="#0C0C0D">
+  <title>CloudBoard — Chaitanya Anand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Mobile Nav Toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true">
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <nav class="nav__inner" role="navigation" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo">Chaitanya</a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link nav__link--active">Projects</a></li>
+        <li><a href="resume.html" class="nav__link">Resume</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Get in Touch</a>
+      <label for="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </label>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="nav__mobile" aria-hidden="true">
+    <nav>
+      <ul class="nav__mobile-links">
+        <li><a href="../index.html" class="nav__mobile-link">Home</a></li>
+        <li><a href="about.html" class="nav__mobile-link">About</a></li>
+        <li><a href="projects.html" class="nav__mobile-link">Projects</a></li>
+        <li><a href="resume.html" class="nav__mobile-link">Resume</a></li>
+        <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="project-hero__meta">
+        <div class="project-hero__meta-item">
+          <span class="project-hero__meta-label">Role</span>
+          <span class="project-hero__meta-value">Lead Developer</span>
+        </div>
+        <div class="project-hero__meta-item">
+          <span class="project-hero__meta-label">Timeline</span>
+          <span class="project-hero__meta-value">3 Months</span>
+        </div>
+        <div class="project-hero__meta-item">
+          <span class="project-hero__meta-label">Year</span>
+          <span class="project-hero__meta-value">2025</span>
+        </div>
+      </div>
+      <h1 class="project-hero__title">CloudBoard</h1>
+      <div class="project-hero__image">
+        <div class="project-hero__image-placeholder">CloudBoard</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <section class="project-content">
+    <div class="container">
+      <div class="project-content__grid">
+        <aside class="project-content__sidebar">
+          <nav class="project-content__section">
+            <h2 class="project-content__section-title">Tech Stack</h2>
+            <div class="project-tech">
+              <span class="project-tech__item">React</span>
+              <span class="project-tech__item">Node.js</span>
+              <span class="project-tech__item">WebSocket</span>
+              <span class="project-tech__item">PostgreSQL</span>
+              <span class="project-tech__item">Canvas API</span>
+              <span class="project-tech__item">Redis</span>
+            </div>
+          </nav>
+          <div class="project-content__section">
+            <a href="#" class="project-link">
+              View Live Demo
+              <span class="project-link__arrow">&rarr;</span>
+            </a>
+          </div>
+          <div class="project-content__section">
+            <a href="#" class="project-link">
+              View Source Code
+              <span class="project-link__arrow">&rarr;</span>
+            </a>
+          </div>
+        </aside>
+
+        <div class="project-content__main">
+          <div class="project-content__section">
+            <h2 class="project-content__section-title">Overview</h2>
+            <p class="project-content__text">CloudBoard is a real-time collaborative whiteboard platform designed for teams that think visually. It enables multiple users to draw, sketch, and brainstorm together in real-time with zero latency.</p>
+            <p class="project-content__text">The platform supports vector-based drawing, shape recognition powered by AI, and seamless collaboration across devices. It's built for design sprints, brainstorming sessions, and visual collaboration.</p>
+          </div>
+
+          <div class="project-content__section">
+            <h2 class="project-content__section-title">Challenge</h2>
+            <p class="project-content__text">Real-time collaboration is inherently complex. The core challenges were:</p>
+            <ul class="project-content__list">
+              <li class="project-content__list-item">
+                <span class="project-content__list-bullet"></span>
+                <span>Achieving sub-50ms latency for multi-user canvas synchronization without sacrificing drawing quality</span>
+              </li>
+              <li class="project-content__list-item">
+                <span class="project-content__list-bullet"></span>
+                <span>Implementing conflict resolution for concurrent edits on the same canvas area</span>
+              </li>
+              <li class="project-content__list-item">
+                <span class="project-content__list-bullet"></span>
+                <span>Maintaining 60fps rendering performance with hundreds of canvas elements</span>
+              </li>
+              <li class="project-content__list-item">
+                <span class="project-content__list-bullet"></span>
+                <span>Building an AI shape recognition system that works in real-time</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-content__section">
+            <h2 class="project-content__section-title">Solution</h2>
+            <p class="project-content__text">I designed a custom WebSocket protocol optimized for canvas operations. Instead of syncing pixel data, I sync vector commands — dramatically reducing bandwidth while maintaining precision.</p>
+            <p class="project-content__text">The conflict resolution uses a last-writer-wins strategy with operational transformation for overlapping edits. The AI shape recognition runs inference on the client side using a lightweight TensorFlow.js model, eliminating server round-trips.</p>
+            <div class="project-gallery">
+              <div class="project-gallery__item">
+                <div class="project-gallery__placeholder">Interface Design</div>
+              </div>
+              <div class="project-gallery__item">
+                <div class="project-gallery__placeholder">Collaboration View</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content__section">
+            <h2 class="project-content__section-title">Outcome</h2>
+            <p class="project-content__text">CloudBoard handles 500+ concurrent users per canvas with an average latency of 38ms. The AI shape recognition achieves 94% accuracy on standard geometric shapes. The platform has been adopted by multiple design teams for their sprint workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Navigation -->
+  <nav class="project-nav" aria-label="Project navigation">
+    <a href="project-deepinsight.html" class="project-nav__link">
+      <span class="project-nav__label">Previous Project</span>
+      <span class="project-nav__title">DeepInsight &larr;</span>
+    </a>
+    <a href="project-merchantos.html" class="project-nav__link">
+      <span class="project-nav__label">Next Project</span>
+      <span class="project-nav__title">MerchantOS &rarr;</span>
+    </a>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">&copy; 2026 Chaitanya Anand</p>
+        <div class="footer__social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link">LinkedIn</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

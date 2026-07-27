@@ -1,0 +1,613 @@
+﻿/*!=================================================================
+
+    responsive.css — Breakpoints & Responsive Adjustments
+    ================================================================= */
+
+/* ===== 1200px ===== */
+@media (max-width: 1200px) {
+  :root {
+    --container-padding: 32px;
+  }
+}
+
+/* ===== 1024px ===== */
+@media (max-width: 1024px) {
+  :root {
+    --space-5xl: 96px;
+    --space-6xl: 128px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  /* Engineering Wall — scale down at tablet */
+  .eng-wall {
+    width: 90%;
+    gap: 40px;
+  }
+
+  /* Projects: standard tier stacks to 1 column */
+  .projects-tier--standard {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Projects: compact tier stacks to 1 column */
+  .projects-tier--compact {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ===== 768px ===== */
+@media (max-width: 768px) {
+  :root {
+    --space-4xl: 64px;
+    --space-5xl: 80px;
+    --space-6xl: 96px;
+    --container-padding: 20px;
+  }
+
+  .nav__inner {
+    height: 64px;
+  }
+
+  .nav__mobile {
+    top: 64px;
+  }
+
+  .home-hero {
+    padding: var(--space-4xl) var(--container-padding) var(--space-3xl);
+  }
+
+  .home-hero__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .home-hero__portrait {
+    aspect-ratio: 16 / 10;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .home-hero__name {
+    font-size: clamp(var(--text-4xl), 12vw, var(--text-7xl));
+    margin-bottom: var(--space-2xl);
+  }
+
+  .home-hero__tagline {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .home-hero__watermark {
+    left: 50%;
+    font-size: clamp(300px, 48vw, 600px);
+  }
+
+  .home-hero__glow {
+    left: 50%;
+    width: 480px;
+    height: 600px;
+    filter: blur(100px);
+  }
+
+  /* Home: feature section padding */
+  .home-feature {
+    padding: var(--space-4xl) var(--container-padding);
+  }
+
+  /* Journey: tablet adjustments */
+  .home-industries__header {
+    margin-bottom: var(--space-4xl);
+  }
+
+  .home-industries__card {
+    flex: 0 0 320px;
+    width: 320px;
+    height: 420px;
+    padding: 40px 32px;
+  }
+
+  .home-industries__connector {
+    flex: 0 0 36px;
+  }
+
+  /* Engineering Mindset: tablet */
+  .home-mindset__wall {
+    width: 85%;
+    gap: 48px;
+  }
+
+  .home-mindset__header {
+    margin-bottom: 64px;
+  }
+
+  /* Roadmap: tablet */
+  .home-roadmap__timeline {
+    width: 85%;
+  }
+
+  .home-roadmap__header {
+    margin-bottom: 64px;
+  }
+
+  .about-hero {
+    padding: calc(64px + var(--space-md)) 0 var(--space-3xl);
+    min-height: auto;
+  }
+
+  .about-hero__heading {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  .about-hero__story-text {
+    font-size: var(--text-base);
+  }
+
+  .about-hero__portrait {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .about-hero__note--1 {
+    right: -4px;
+  }
+
+  .about-hero__note--2 {
+    left: -6px;
+  }
+
+  .about-debug__heading {
+    font-size: clamp(var(--text-2xl), 6vw, var(--text-4xl));
+  }
+
+  .about-debug__grid {
+    gap: var(--space-2xl);
+  }
+
+  .project-showcase {
+    padding: var(--space-4xl) 0;
+  }
+
+  /* Projects hero: compact metadata on tablet */
+  .page-hero__divider {
+    width: 48px;
+  }
+
+  .page-hero__meta {
+    font-size: 10px;
+  }
+
+  .project-showcase__title {
+    font-size: clamp(var(--text-2xl), 5vw, var(--text-3xl));
+  }
+
+  /* Projects: feature card stacks */
+  .project-card--feature {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects: standard tier stacks */
+  .projects-tier--standard {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Projects: compact tier stacks */
+  .projects-tier--compact {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-hero__title {
+    font-size: clamp(var(--text-3xl), 8vw, var(--text-5xl));
+  }
+
+  .project-content__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-content__sidebar {
+    position: static;
+  }
+
+  .project-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .project-nav__link:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border-dark);
+    text-align: left;
+  }
+
+  .project-nav__link:last-child {
+    text-align: left;
+  }
+
+  .career-card__inner {
+    padding: var(--space-2xl) var(--space-xl) var(--space-xl);
+  }
+
+  .career-card__title {
+    font-size: var(--text-2xl);
+  }
+
+  .career-card__bg-annotation {
+    font-size: 120px;
+  }
+
+  .contact-hero {
+    padding: calc(64px + var(--space-4xl)) 0 var(--space-4xl);
+  }
+
+  .contact-hero__title {
+    font-size: clamp(var(--text-3xl), 8vw, var(--text-5xl));
+  }
+
+  .contact-hero__status-inner {
+    padding: var(--space-xl);
+  }
+
+  .contact-card__inner {
+    padding: var(--space-xl);
+  }
+
+  .contact-cta__title {
+    font-size: clamp(var(--text-2xl), 6vw, var(--text-4xl));
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== 480px ===== */
+@media (max-width: 480px) {
+  :root {
+    --space-3xl: 48px;
+    --space-4xl: 56px;
+    --space-5xl: 64px;
+    --container-padding: 16px;
+  }
+
+  .nav__inner {
+    height: 56px;
+  }
+
+  .nav__mobile {
+    top: 56px;
+    padding: var(--space-xl) var(--container-padding);
+  }
+
+  .nav__mobile-link {
+    font-size: var(--text-2xl);
+  }
+
+  .home-hero__label {
+    font-size: var(--text-xs);
+    margin-bottom: var(--space-lg);
+  }
+
+  .home-hero__name {
+    font-size: clamp(var(--text-3xl), 14vw, var(--text-6xl));
+    margin-bottom: var(--space-xl);
+  }
+
+  .home-hero__tagline {
+    font-size: var(--text-base);
+  }
+
+  .home-hero__portrait {
+    aspect-ratio: 3 / 4;
+    max-width: 340px;
+  }
+
+  .home-hero__watermark {
+    font-size: clamp(240px, 55vw, 420px);
+  }
+
+  .home-hero__glow {
+    width: 380px;
+    height: 500px;
+    filter: blur(90px);
+  }
+
+  .home-feature {
+    padding: var(--space-3xl) var(--container-padding);
+  }
+
+  .home-feature__header {
+    margin-bottom: var(--space-3xl);
+  }
+
+  .eng-wall {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 24px 0 48px;
+  }
+
+  .eng-wall__tiles--tools {
+    gap: 10px;
+  }
+
+  /* Journey: mobile adjustments */
+  .home-industries {
+    padding: var(--space-3xl) var(--container-padding);
+  }
+
+  .home-industries__header {
+    margin-bottom: var(--space-3xl);
+  }
+
+  .home-industries__card {
+    padding: 32px 28px;
+    border-radius: 20px;
+    height: auto;
+    min-height: 380px;
+  }
+
+  .home-industries__connector {
+    height: 36px;
+  }
+
+  .home-industries__year {
+    font-size: clamp(2.25rem, 12vw, 3rem);
+  }
+
+  .home-industries__title {
+    font-size: 1.25rem;
+  }
+
+  /* Engineering Mindset: mobile */
+  .home-mindset {
+    padding: var(--space-4xl) var(--container-padding);
+  }
+
+  .home-mindset__wall {
+    width: 95%;
+    gap: 40px;
+  }
+
+  .home-mindset__header {
+    margin-bottom: 48px;
+  }
+
+  .mindset__line--filled,
+  .mindset__line--outline {
+    font-size: clamp(var(--text-2xl), 8vw, var(--text-4xl));
+  }
+
+  .mindset__line--bold {
+    font-size: clamp(var(--text-xl), 6vw, var(--text-3xl));
+  }
+
+  .mindset__line--thin,
+  .mindset__line--muted {
+    font-size: clamp(var(--text-base), 5vw, var(--text-xl));
+  }
+
+  /* Roadmap: mobile */
+  .home-roadmap {
+    padding: var(--space-4xl) var(--container-padding) var(--space-3xl);
+  }
+
+  .home-roadmap__timeline {
+    width: 95%;
+  }
+
+  .home-roadmap__header {
+    margin-bottom: 48px;
+  }
+
+  .roadmap__milestone {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-left: 24px;
+  }
+
+  .roadmap__milestone--right {
+    align-items: flex-start;
+  }
+
+  .roadmap__milestone--right .roadmap__content {
+    text-align: left;
+  }
+
+  .roadmap__milestone--right .roadmap__desc {
+    margin-left: 0;
+  }
+
+  .roadmap__node {
+    left: 0;
+    transform: none;
+  }
+
+  .roadmap__connector {
+    margin-left: 3px;
+  }
+
+  .roadmap__content {
+    width: 100%;
+  }
+
+  .about-hero {
+    padding: calc(56px + var(--space-md)) 0 var(--space-2xl);
+  }
+
+  .about-hero__heading {
+    font-size: clamp(1.75rem, 10vw, 2.5rem);
+    margin-bottom: var(--space-xl);
+  }
+
+  .about-hero__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .about-hero__meta-divider {
+    display: none;
+  }
+
+  .about-hero__checklist {
+    gap: var(--space-xs);
+  }
+
+  .about-hero__checklist-item {
+    font-size: var(--text-xs);
+  }
+
+  .about-hero__portrait {
+    max-width: 320px;
+  }
+
+  .about-hero__note {
+    font-size: 11px;
+  }
+
+  .about-hero__annotation {
+    display: none;
+  }
+
+  .about-debug__callout {
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .about-debug__note {
+    display: none;
+  }
+
+  .about-debug__block {
+    padding-left: var(--space-md);
+  }
+
+  .about-freelance__block {
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .project-showcase__tags {
+    gap: var(--space-2xs);
+  }
+
+  .project-tag {
+    font-size: 0.7rem;
+    padding: var(--space-2xs) var(--space-sm);
+  }
+
+  /* Projects: feature card body */
+  .project-card--feature .project-card__body {
+    padding: var(--space-2xl);
+  }
+
+  /* Projects: compact card body */
+  .project-card--compact .project-card__body {
+    padding: var(--space-lg);
+  }
+
+  /* Projects: compact actions wrap */
+  .project-card--compact .project-card__actions {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  /* Projects: hide hero blueprint labels on mobile */
+  .page-hero__blueprint {
+    display: none;
+  }
+
+  /* Projects: hide watermark and measurement guides on mobile */
+  .page-hero__watermark {
+    display: none;
+  }
+
+  .page-hero__guides {
+    display: none;
+  }
+
+  /* Projects: simplify TradeX visual on mobile */
+  .project-card__pattern--tradex .project-visual__overlay {
+    grid-template-columns: 1fr;
+    padding: var(--space-xl);
+  }
+
+  .project-visual__sidebar {
+    display: none;
+  }
+
+  .project-hero__meta {
+    gap: var(--space-lg);
+  }
+
+  .project-gallery {
+    gap: var(--space-sm);
+  }
+
+  .career-card__inner {
+    padding: var(--space-xl) var(--space-lg) var(--space-lg);
+    min-height: auto;
+  }
+
+  .career-card__title {
+    font-size: var(--text-xl);
+  }
+
+  .career-card__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .career-card__bg-annotation {
+    font-size: 80px;
+  }
+
+  .contact-hero__title {
+    font-size: clamp(var(--text-2xl), 10vw, var(--text-3xl));
+  }
+
+  .contact-hero__status-inner {
+    padding: var(--space-lg);
+  }
+
+  .contact-hero__status-item {
+    font-size: var(--text-xs);
+  }
+
+  .contact-card__inner {
+    padding: var(--space-lg);
+  }
+
+  .contact-card__arrow {
+    position: static;
+    display: block;
+    margin-top: var(--space-md);
+  }
+
+  .contact-cta__title {
+    font-size: clamp(var(--text-xl), 7vw, var(--text-3xl));
+  }
+
+  .contact-cta__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    padding: var(--space-2xl) 0;
+  }
+
+  .footer__social {
+    gap: var(--space-md);
+  }
+}
