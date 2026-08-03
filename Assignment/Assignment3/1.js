@@ -5,7 +5,7 @@ const email = document.getElementById("email");
 const course = document.getElementById("course");
 const feedback = document.getElementById("feedback");
 
-// Remove error when user types
+
 name.addEventListener("input", () => {
     document.getElementById("nameError").innerHTML = "";
 });
@@ -22,7 +22,7 @@ feedback.addEventListener("input", () => {
     document.getElementById("feedbackError").innerHTML = "";
 });
 
-// Form Submit
+
 form.addEventListener("submit", function(e){
 
     e.preventDefault();
@@ -64,10 +64,10 @@ form.addEventListener("submit", function(e){
             feedback: feedback.value
         };
 
-        // Local Storage
+        
         localStorage.setItem("studentFeedback", JSON.stringify(student));
 
-        // Session Storage
+        
         sessionStorage.setItem("sessionUser", name.value);
 
         displayData();
@@ -77,7 +77,7 @@ form.addEventListener("submit", function(e){
 
 });
 
-// Display Data
+
 function displayData(){
 
     const data = localStorage.getItem("studentFeedback");
@@ -110,7 +110,7 @@ function displayData(){
 
 }
 
-// Delete Data
+
 function deleteData(){
 
     localStorage.removeItem("studentFeedback");
@@ -122,5 +122,5 @@ function deleteData(){
     document.getElementById("sessionUser").innerHTML = "";
 }
 
-// Display saved data when page loads
+
 displayData();
